@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+
 
 @NgModule({
     imports: [
@@ -21,13 +23,15 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
         NopagefoundComponent,
         BreadcrumbsComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent
     ],
     exports: [
         NopagefoundComponent,
         BreadcrumbsComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent,
     ]
 })
 export class SharedModule {}
